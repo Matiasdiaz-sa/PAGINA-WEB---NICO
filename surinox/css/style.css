@@ -28,6 +28,14 @@ body {
     background-color: var(--white);
     line-height: 1.6;
     overflow-x: hidden;
+    
+    /* Page Transition */
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+body.loaded {
+    opacity: 1;
 }
 
 /* Utilidades */
@@ -136,10 +144,10 @@ ul {
     gap: 0.8rem;
 }
 
-.logo-icon {
-    font-size: 2.2rem;
-    color: var(--primary-blue);
-    display: flex;
+.logo-img {
+    height: 65px;
+    width: auto;
+    object-fit: contain;
 }
 
 .logo-text h1 {
@@ -222,7 +230,7 @@ ul {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('bg.png');
+    background-image: url('../img/bg.png');
     background-size: cover;
     background-position: center;
     opacity: 0.5; /* Dark overlay effect for text legibility */
@@ -437,8 +445,10 @@ ul {
     letter-spacing: 1px;
 }
 
-.footer-logo i {
-    color: var(--primary-light);
+.footer-logo-img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
 }
 
 .footer-col p {
@@ -467,7 +477,7 @@ ul {
     background-color: var(--primary-light);
 }
 
-.footer-links li, .footer-contact li {
+.footer .footer-links li, .footer .footer-contact li {
     margin-bottom: 1rem;
     display: flex;
     align-items: flex-start;
@@ -559,6 +569,525 @@ ul {
 .btn-whatsapp:hover {
     background-color: #128c7e;
     transform: scale(1.1);
+}
+
+/* Nuevas Secciones */
+.section-padding {
+    padding: 6rem 0;
+}
+
+.bg-light {
+    background-color: #f9f9f9;
+}
+
+.mb-1 { margin-bottom: 1rem; }
+.mb-2 { margin-bottom: 2rem; }
+.mt-1 { margin-top: 1rem; }
+.mt-2 { margin-top: 2rem; }
+.text-center { text-align: center; }
+.w-100 { width: 100%; }
+
+/* Empresa */
+.empresa-section {
+    background-color: var(--white);
+}
+
+.empresa-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .empresa-stats {
+        grid-template-columns: 1fr;
+    }
+}
+
+.stat-item h3 {
+    font-size: 2.5rem;
+    color: var(--primary-light);
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.stat-item p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.empresa-content {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: var(--white);
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+}
+
+.empresa-content p {
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+}
+
+/* Rounded Client Logos Mask */
+.client-logo-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    background-color: transparent;
+    transition: transform 0.3s ease;
+    border: 4px solid var(--white);
+    display: block;
+    margin: 0 auto;
+}
+
+.client-logo-circle:hover {
+    transform: translateY(-5px);
+}
+
+/* Productos Detalle */
+.producto-detalle {
+    margin-bottom: 3rem;
+}
+
+.producto-detalle h3 {
+    font-size: 1.8rem;
+    color: var(--primary-blue);
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.producto-detalle h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary-light);
+}
+
+.producto-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.producto-specs {
+    flex: 1;
+    min-width: 300px;
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+    border: 1px solid var(--border-color);
+}
+
+.producto-specs.full-width {
+    flex: 100%;
+}
+
+.producto-specs h4 {
+    font-size: 1.2rem;
+    color: var(--primary-blue);
+    margin-bottom: 1.2rem;
+}
+
+.check-list li, .bullet-list li {
+    margin-bottom: 0.8rem;
+    position: relative;
+    padding-left: 1.8rem;
+    color: var(--text-muted);
+}
+
+.check-list li::before {
+    content: '\f00c';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: var(--primary-light);
+}
+
+.bullet-list li::before {
+    content: '\f0da';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: var(--primary-blue);
+    font-size: 1.2rem;
+}
+
+.check-list.two-cols {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 0.5rem 2rem;
+}
+
+.prod-separator {
+    border: none;
+    border-top: 1px dashed var(--border-color);
+    margin: 3.5rem 0;
+    opacity: 0.6;
+}
+
+.serpentinas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.serp-card {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+    border-top: 4px solid var(--primary-light);
+    display: flex;
+    flex-direction: column;
+}
+
+.serp-card h4 {
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.serp-card ul {
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.serp-card li {
+    font-size: 0.95rem;
+    color: var(--text-main);
+    margin-bottom: 0.5rem;
+    list-style-type: none;
+    position: relative;
+    padding-left: 1.2rem;
+}
+
+.serp-card li::before {
+    content: '•';
+    color: var(--primary-light);
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+.serp-desc {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-style: italic;
+    background-color: var(--accent-blue);
+    padding: 0.8rem;
+    border-radius: 4px;
+    margin-top: auto;
+}
+
+/* FAQ */
+.faq-accordion {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background-color: var(--white);
+    margin-bottom: 1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+    border-left: 4px solid var(--primary-blue);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.faq-item:hover {
+    transform: translateX(10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    background-color: var(--accent-blue);
+    border-left-color: var(--primary-light);
+}
+
+.faq-item h4 {
+    font-size: 1.2rem;
+    color: var(--primary-blue);
+    margin-bottom: 0.8rem;
+    transition: var(--transition);
+}
+
+.faq-item:hover h4 {
+    color: var(--primary-light);
+}
+
+.faq-item p {
+    color: var(--text-muted);
+}
+
+/* Redes Sociales Contacto */
+.footer-col .social-links.social-blue a {
+    color: var(--primary-blue);
+    background-color: var(--accent-blue);
+    border-color: rgba(10, 66, 127, 0.2);
+}
+.footer-col .social-links.social-blue a:hover {
+    background-color: var(--primary-blue);
+    color: var(--white);
+}
+
+/* Nuevos Estilos Visuales (Diagonales, Imágenes, etc.) */
+.hero-diagonal {
+    position: relative;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding-top: 90px;
+    background-color: #000;
+    overflow: hidden;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
+    padding-bottom: 15vw;
+}
+
+.hero-diagonal-bg {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-image: url('../img/bg.png'); /* fallback or standard image */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.hero-diagonal::after {
+    content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(135deg, rgba(10, 66, 127, 0.85) 0%, rgba(0, 0, 0, 0.7) 100%);
+    z-index: 2;
+}
+
+.hero-diagonal .container {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    color: var(--white);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.diagonal-up {
+    clip-path: polygon(0 10vw, 100% 0, 100% 100%, 0 100%);
+    padding-top: calc(6rem + 10vw);
+}
+
+.diagonal-down {
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
+    padding-bottom: calc(6rem + 10vw);
+    margin-bottom: -10vw;
+}
+
+.split-layout {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+.split-text { flex: 1; }
+.split-image { flex: 1; position: relative; }
+.split-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    object-fit: cover;
+    aspect-ratio: 4/3;
+    transition: transform 0.5s cubic-bezier(0.1, 0.7, 0.1, 1);
+}
+.split-image img:hover {
+    transform: scale(1.03);
+}
+
+.bg-image-overlay {
+    position: relative;
+    background-image: url('../img/coils.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.bg-image-overlay::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(10, 66, 127, 0.9);
+    z-index: 1;
+}
+.bg-image-overlay > .container {
+    position: relative;
+    z-index: 2;
+}
+
+.mx-auto { margin-left: auto; margin-right: auto; }
+
+/* Estilos Tipo Apple para Catálogo */
+.apple-catalog {
+    background-color: #fbfbfd;
+    color: #1d1d1f;
+}
+
+.apple-section-title {
+    font-size: 3.5rem;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: #1d1d1f;
+}
+
+.apple-section-desc {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    color: #86868b;
+    margin-bottom: 5rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.apple-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: #1d1d1f;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin-bottom: 5rem;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    min-height: 550px;
+}
+
+.apple-card:hover {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+}
+
+.apple-card-bg {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    transition: transform 0.6s ease;
+}
+
+.apple-card:hover .apple-card-bg {
+    transform: scale(1.03);
+}
+
+.apple-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0.2) 100%);
+    z-index: 1;
+}
+
+.apple-card-content {
+    padding: 3rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.apple-card h3 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    letter-spacing: -0.01em;
+}
+
+.apple-card p.intro {
+    font-size: 1.2rem;
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.apple-specs-grid {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    padding-top: 3rem;
+}
+
+.apple-specs-col {
+    text-align: left;
+    min-width: 250px;
+}
+
+.apple-specs-col h4 {
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 1.2rem;
+}
+
+.apple-list {
+    list-style: none;
+    padding: 0;
+}
+
+.apple-list li {
+    font-size: 1.05rem;
+    color: #ffffff;
+    margin-bottom: 0.8rem;
+    position: relative;
+    padding-left: 1.2rem;
+}
+
+.apple-list li::before {
+    content: '•';
+    color: var(--primary-light);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.apple-btn {
+    display: inline-block;
+    background-color: #0071e3;
+    color: #fff;
+    border-radius: 980px;
+    font-size: 17px;
+    padding: 12px 22px;
+    text-decoration: none;
+    font-weight: 400;
+    margin-top: 2rem;
+    transition: background-color 0.2s;
+}
+
+.apple-btn:hover {
+    background-color: #0077ed;
+    color: #fff;
 }
 
 /* Animations */

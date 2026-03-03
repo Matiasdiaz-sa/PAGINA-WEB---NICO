@@ -5,146 +5,178 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Surinox | Especialistas en Serpentinas y Caños de Acero Inoxidable</title>
     <meta name="description" content="Surinox, empresa líder en venta de serpentinas y caños de acero inoxidable. Calidad y experiencia.">
-    
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-    <!-- Header / Navbar -->
-    <header class="header" id="header">
+    <header class="header" id="header" style="background-color: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
         <div class="container navbar">
-            <a href="#" class="logo">
-                <div class="logo-icon">
-                    <i class="fa-solid fa-ring"></i>
-                </div>
-                <div class="logo-text">
-                    <h1>Surinox</h1>
-                    <span>Acero Inoxidable</span>
-                </div>
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Surinox Logo" class="logo-img">
+                <div class="logo-text"><h1>Surinox</h1><span>Acero Inoxidable</span></div>
             </a>
-            
             <nav class="nav-menu" id="nav-menu">
-                <a href="#inicio" class="nav-link active">Inicio</a>
-                <a href="#empresa" class="nav-link">Empresa</a>
-                <a href="#productos" class="nav-link">Productos <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
-                <a href="#tratamientos" class="nav-link">Tratamientos <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
-                <a href="#calidad" class="nav-link">Calidad</a>
-                <a href="#contacto" class="nav-link">Contacto</a>
+                <a href="index.html" class="nav-link active">Inicio</a>
+                <a href="empresa.html" class="nav-link">Empresa</a>
+                <a href="productos.html" class="nav-link">Productos</a>
+                <a href="clientes.html" class="nav-link">Clientes</a>
+                <a href="faq.html" class="nav-link">FAQ</a>
+                <a href="contacto.html" class="nav-link">Contacto</a>
             </nav>
-
-            <a href="#presupuesto" class="btn btn-outline">Presupuesto</a>
-            
-            <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menú">
-                <i class="fa-solid fa-bars"></i>
-            </button>
+            <a href="https://wa.me/+541159007011" class="btn btn-outline" target="_blank">Contactar</a>
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menú"><i class="fa-solid fa-bars"></i></button>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="inicio">
-        <div class="hero-bg"></div>
-        <div class="hero-content container">
-            <span class="subtitle" data-animate>desde 1995</span>
-            <h2 class="title" data-animate>Especialistas en<br><span class="highlight">Acero Inoxidable</span></h2>
-            <p class="description" data-animate>Venta de serpentinas y caños de la más alta calidad para aplicaciones industriales y comerciales.</p>
-            <a href="#empresa" class="btn btn-primary" data-animate>MÁS ACERCA DE NOSOTROS</a>
-        </div>
-        
-        <!-- Bottom Wave -->
-        <div class="hero-wave">
-            <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
-                <!-- Capa 1 (Más alta y transparente) -->
-                <path fill="var(--white)" fill-opacity="0.3" d="M0,128L48,117.3C96,107,192,85,288,80C384,75,480,85,576,112C672,139,768,181,864,181.3C960,181,1056,139,1152,112C1248,85,1344,75,1392,69.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-                <!-- Capa 2 (Media opacidad) -->
-                <path fill="var(--white)" fill-opacity="0.6" d="M0,160L48,176C96,192,192,224,288,218.7C384,213,480,171,576,149.3C672,128,768,128,864,138.7C960,149,1056,171,1152,181.3C1248,192,1344,192,1392,192L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-                <!-- Capa 3 (El wave sólido original) -->
-                <path class="shape-fill" d="M0,256L48,229.3C96,203,192,149,288,138.7C384,128,480,160,576,192C672,224,768,256,864,245.3C960,235,1056,181,1152,149.3C1248,117,1344,107,1392,101.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-            </svg>
-        </div>
-    </section>
-
-    <!-- Productos Destacados -->
-    <section class="productos-section" id="productos">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Productos Destacados</h2>
-                <div class="separator"></div>
-                <p class="section-desc">Ofrecemos soluciones duraderas con materiales de primera línea adaptados a sus requerimientos.</p>
+    <main>
+        <!-- Hero Section con corte diagonal -->
+        <section class="hero-diagonal" id="inicio">
+            <div class="hero-diagonal-bg"></div>
+            <div class="container hero-content" style="padding-top: 15vh;">
+                <span class="subtitle" data-animate>desde 1995</span>
+                <h2 class="title" data-animate>EXCELENCIA EN<br><span class="highlight">ACERO INOXIDABLE</span></h2>
+                <p class="description" data-animate>Fabricación nacional de caños y serpentinas con envíos a todo el país.</p>
+                <div class="hero-buttons" data-animate style="display: flex; gap: 1rem; justify-content: center; margin-top: 2rem;">
+                    <a href="productos.html" class="btn btn-primary">Ver Catálogo</a>
+                    <a href="contacto.html" class="btn btn-outline" style="border-color: white; color: white;">Contacto comercial</a>
+                </div>
             </div>
+        </section>
+
+        <!-- Sección visual con imagen de caños -->
+        <section class="diagonal-up section-padding" style="margin-top: -10vw; background-color: var(--white); position: relative; z-index: 10;">
+            <div class="container">
+                <div class="split-layout">
+                    <div class="split-text" data-animate>
+                        <h2 class="section-title">Nuestra Experiencia</h2>
+                        <div class="separator" style="margin: 0 0 1.5rem 0;"></div>
+                        <p class="mb-1" style="font-size: 1.15rem; color: var(--text-muted); line-height: 1.8;">Somos fabricantes especializados con más de 30 años de trayectoria garantizando calidad y rendimiento en caños y serpentinas de acero inoxidable calidad 304 y 316.</p>
+                        <ul class="check-list mt-2 mb-2" style="font-size: 1.1rem;">
+                            <li>Más de 100.000 metros fabricados por año</li>
+                            <li>Atención y asesoramiento personalizado</li>
+                            <li>Fabricación bajo especificación técnica</li>
+                        </ul>
+                        <a href="empresa.html" class="btn btn-primary mt-1">Conocer más sobre Surinox</a>
+                    </div>
+                    <div class="split-image" data-animate style="animation-delay: 0.2s;">
+                        <img loading="lazy" src="img/pipes.png" alt="Caños de Acero Inoxidable Apilados">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección visual de productos (fondo coils.png) -->
+        <section class="bg-image-overlay section-padding text-center" style="padding-bottom: 18vw;">
+            <div class="container">
+                <h2 class="section-title" style="color: var(--white);">Soluciones de Primer Nivel</h2>
+                <div class="separator mx-auto" style="background-color: var(--white);"></div>
+                <p class="section-desc mb-2" style="color: rgba(255,255,255,0.85); font-size: 1.2rem;">Descubre nuestra amplia gama de productos diseñados para maximizar la durabilidad.</p>
+                
+                <div class="grid-productos mt-2" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2.5rem;">
+                    <!-- Producto 1 -->
+                    <div class="card-producto" style="flex: 1 1 300px; max-width: 350px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: white; backdrop-filter: blur(10px);">
+                        <div class="card-img" style="background: rgba(255,255,255,0.1);"><i class="fa-solid fa-industry icon-large" style="color: white;"></i></div>
+                        <h3 style="color: white;">Caños de acero inoxidable</h3>
+                        <p style="color: rgba(255,255,255,0.7);">Con y sin costura, amplia gama de espesores y diámetros.</p>
+                        <a href="productos.html" class="btn-text" style="color: var(--primary-light);">Ver detalles <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <!-- Producto 2 -->
+                    <div class="card-producto" style="flex: 1 1 300px; max-width: 350px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: white; backdrop-filter: blur(10px);">
+                        <div class="card-img" style="background: rgba(255,255,255,0.1);"><i class="fa-solid fa-ring icon-large" style="color: white;"></i></div>
+                        <h3 style="color: white;">Tubos capilares sin costura</h3>
+                        <p style="color: rgba(255,255,255,0.7);">Alta precisión dimensional e integridad superficial.</p>
+                        <a href="productos.html" class="btn-text" style="color: var(--primary-light);">Ver detalles <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Producto 3 -->
+                    <div class="card-producto" style="flex: 1 1 300px; max-width: 350px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: white; backdrop-filter: blur(10px);">
+                        <div class="card-img" style="background: rgba(255,255,255,0.1);"><i class="fa-solid fa-compact-disc icon-large" style="color: white;"></i></div>
+                        <h3 style="color: white;">Rollos de acero inoxidable</h3>
+                        <p style="color: rgba(255,255,255,0.7);">Flexibilidad y longitud continua para instalaciones eficientes.</p>
+                        <a href="productos.html" class="btn-text" style="color: var(--primary-light);">Ver detalles <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <!-- Producto 4 -->
+                    <div class="card-producto" style="flex: 1 1 300px; max-width: 350px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: white; backdrop-filter: blur(10px);">
+                        <div class="card-img" style="background: rgba(255,255,255,0.1);"><i class="fa-solid fa-water icon-large" style="color: white;"></i></div>
+                        <h3 style="color: white;">Serpentinas de acero inoxidable</h3>
+                        <p style="color: rgba(255,255,255,0.7);">Diseños a medida para intercambio térmico de alta eficiencia.</p>
+                        <a href="productos.html" class="btn-text" style="color: var(--primary-light);">Ver detalles <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Producto 5 -->
+                    <div class="card-producto" style="flex: 1 1 300px; max-width: 350px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: white; backdrop-filter: blur(10px);">
+                        <div class="card-img" style="background: rgba(255,255,255,0.1);"><i class="fa-solid fa-bars icon-large" style="color: white;"></i></div>
+                        <h3 style="color: white;">Barras de acero inoxidable</h3>
+                        <p style="color: rgba(255,255,255,0.7);">Resistencia mecánica superior para mecanizado y estructuras.</p>
+                        <a href="productos.html" class="btn-text" style="color: var(--primary-light);">Ver detalles <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="mt-2 text-center" style="margin-top: 4rem;">
+                    <a href="productos.html" class="btn btn-outline" style="border-color: var(--white); color: var(--white);">Catálogo Completo</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Aplicaciones / FAQ - Rediseño Premium -->
+        <section class="section-padding" style="position: relative; background-color: transparent; margin-top: -18vw; padding-top: calc(18vw + 3rem); z-index: 5;">
+            <!-- Difuminado de transición de fondo -->
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; background: linear-gradient(to bottom, transparent 0%, var(--accent-blue) 15vw, var(--accent-blue) 100%); pointer-events: none;"></div>
             
-            <div class="grid-productos">
-                <!-- Card 1 -->
-                <div class="card-producto">
-                    <div class="card-img">
-                        <i class="fa-solid fa-water icon-large"></i>
+            <!-- Elemento decorativo superior -->
+            <div style="position: absolute; top: 15vw; left: 0; width: 100%; height: 15vw; background: linear-gradient(to bottom, rgba(10, 66, 127, 0.05), transparent); pointer-events: none; z-index: 1;"></div>
+            
+            <div class="container" style="position: relative; z-index: 2;">
+                <div class="split-layout" style="align-items: center; gap: 3rem;">
+                    <div class="split-text" data-animate style="flex: 1;">
+                        <h2 class="section-title" style="font-size: 2.8rem; margin-bottom: 1.5rem;">Nuestros <span style="color: var(--primary-light);">Clientes</span></h2>
+                        <div class="separator" style="margin: 0 0 2rem 0;"></div>
+                        <p class="section-desc" style="margin: 0 0 2rem 0; font-size: 1.15rem; color: var(--text-muted); text-align: left; max-width: 100%;">
+                            Cientos de empresas de la industria cervecera, alimenticia y térmica confían en la calidad de nuestros productos de acero inoxidable. Acompañamos el crecimiento de grandes marcas y emprendedores con soluciones a medida y duraderas.
+                        </p>
+                        <div style="display: flex; gap: 1.5rem; margin-top: 2rem; flex-wrap: wrap;">
+                            <a href="clientes.html" class="btn btn-primary" style="padding: 1rem 2.5rem; font-size: 1.05rem; box-shadow: 0 10px 25px rgba(24, 110, 209, 0.25);">Ver Todos los Clientes</a>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <h3>Serpentinas Industriales</h3>
-                        <p>Diseños a medida en acero 304 y 316L para intercambio térmico de alta eficiencia en la industria alimenticia y química.</p>
-                        <a href="#" class="btn-text">Ver catálogo <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                
-                <!-- Card 2 -->
-                <div class="card-producto">
-                    <div class="card-img">
-                        <i class="fa-solid fa-industry icon-large"></i>
-                    </div>
-                    <div class="card-body">
-                        <h3>Caños de Acero Inoxidable</h3>
-                        <p>Variedad de diámetros y espesores con y sin costura. Alta resistencia a la corrosión y durabilidad garantizada.</p>
-                        <a href="#" class="btn-text">Ver catálogo <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                
-                <!-- Card 3 -->
-                <div class="card-producto">
-                    <div class="card-img">
-                        <i class="fa-solid fa-gears icon-large"></i>
-                    </div>
-                    <div class="card-body">
-                        <h3>Accesorios y Conexiones</h3>
-                        <p>Codos, tes, reducciones y bridas fabricadas bajo estrictas normas internacionales de calidad para montajes seguros.</p>
-                        <a href="#" class="btn-text">Ver catálogo <i class="fa-solid fa-arrow-right"></i></a>
+                    
+                    <div class="split-image" data-animate style="flex: 1.2; animation-delay: 0.2s; position: relative;">
+                        <!-- Decos detrás de la imagen -->
+                        <div style="position: absolute; top: -20px; right: -20px; width: 100px; height: 100px; border: 4px solid var(--primary-light); border-radius: 20px; z-index: 0; opacity: 0.5;"></div>
+                        <div style="position: absolute; bottom: -20px; left: -20px; width: 150px; height: 150px; background-color: rgba(24, 110, 209, 0.1); border-radius: 50%; z-index: 0;"></div>
+                        
+                        <!-- Grilla de Logos Circulares de Clientes -->
+                        <div style="background: var(--white); border-radius: 24px; padding: 2.5rem; box-shadow: 0 20px 50px rgba(10, 66, 127, 0.08); position: relative; z-index: 1; border: 1px solid rgba(10, 66, 127, 0.05); display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; align-items: center; justify-items: center;">
+                            <img loading="lazy" src="img/ancestral.png" class="client-logo-circle" alt="Ancestral" style="width: 100px; height: 100px;">
+                            <img loading="lazy" src="img/codiciada.png" class="client-logo-circle" alt="Codiciada" style="width: 100px; height: 100px;">
+                            <img loading="lazy" src="img/ogham.png" class="client-logo-circle" alt="Ogham" style="width: 100px; height: 100px;">
+                           
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Footer Section -->
     <footer class="footer">
         <div class="container footer-content">
-            <!-- Company Info -->
             <div class="footer-col">
-                <a href="#" class="footer-logo">
-                    <i class="fa-solid fa-ring"></i>
-                    <span>Surinox</span>
-                </a>
+                <a href="index.html" class="footer-logo"><img src="img/logo.png" alt="Surinox" class="footer-logo-img"><span>Surinox</span></a>
                 <p>Especialistas en venta de serpentinas y caños de acero inoxidable para la industria. Calidad, durabilidad y experiencia garantizada.</p>
             </div>
-            
-            <!-- Quick Links -->
             <div class="footer-col">
                 <h3>Enlaces Rápidos</h3>
                 <ul class="footer-links">
-                    <li><a href="#inicio"><i class="fa-solid fa-angle-right"></i> Inicio</a></li>
-                    <li><a href="#empresa"><i class="fa-solid fa-angle-right"></i> Empresa</a></li>
-                    <li><a href="#productos"><i class="fa-solid fa-angle-right"></i> Productos</a></li>
-                    <li><a href="#contacto"><i class="fa-solid fa-angle-right"></i> Contacto</a></li>
+                    <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Inicio</a></li>
+                    <li><a href="empresa.html"><i class="fa-solid fa-angle-right"></i> Empresa</a></li>
+                    <li><a href="productos.html"><i class="fa-solid fa-angle-right"></i> Productos</a></li>
+                    <li><a href="contacto.html"><i class="fa-solid fa-angle-right"></i> Contacto</a></li>
                 </ul>
             </div>
-            
-            <!-- Contact -->
             <div class="footer-col">
                 <h3>Contacto</h3>
                 <ul class="footer-contact">
@@ -153,32 +185,23 @@
                     <li><i class="fa-solid fa-envelope"></i> <span>info@surinox.com.ar</span></li>
                 </ul>
             </div>
-            
-            <!-- Social -->
             <div class="footer-col">
                 <h3>Síguenos</h3>
                 <p>Mantenete al tanto de nuestras novedades y nuevos productos de acero inoxidable.</p>
-                <div class="social-links">
+                <div class="social-links social-blue">
                     <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
                     <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
                 </div>
             </div>
         </div>
-        
         <div class="footer-bottom">
-            <div class="container">
-                <p>&copy; 2026 Surinox. Todos los derechos reservados.</p>
-            </div>
+            <div class="container"><p>&copy; 2026 Surinox. Todos los derechos reservados.</p></div>
         </div>
     </footer>
-
-    <!-- Botón Flotante WhatsApp -->
-    <a href="https://wa.me/1234567890" class="btn-whatsapp" target="_blank" aria-label="Contactar por WhatsApp">
+    <a href="https://wa.me/+541131499461" class="btn-whatsapp" target="_blank" aria-label="Contactar por WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
-
-    <!-- Custom JS -->
-    <script src="script.js"></script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>
