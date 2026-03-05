@@ -22,7 +22,7 @@
                 <a href="../index.html" class="nav-link">Inicio</a>
                 <a href="empresa.html" class="nav-link">Empresa</a>
                 <a href="productos.html" class="nav-link">Productos</a>
-                <a href="clientes.html" class="nav-link">Clientes</a>
+                <a href="aplicaciones.html" class="nav-link">Aplicaciones</a>
                 <a href="faq.html" class="nav-link">FAQ</a>
                 <a href="contacto.html" class="nav-link active">Contacto</a>
             </nav>
@@ -44,24 +44,26 @@
                     <div class="contacto-info" style="flex: 1; min-width: 300px;">
                         <h3 style="color: var(--primary-blue); font-size: 1.5rem; margin-bottom: 1.5rem;">Vías de comunicación</h3>
                         <ul class="footer-contact" style="color: var(--text-main);">
-                            <li><i class="fa-solid fa-location-dot" style="color: var(--primary-light); font-size: 1.2rem; margin-right: 15px;"></i> <span>Parque Industrial, Buenos Aires, Argentina</span></li>
-                            <li><i class="fa-solid fa-phone" style="color: var(--primary-light); font-size: 1.2rem; margin-right: 15px;"></i> <span>+54 11 1234-5678</span></li>
-                            <li><i class="fa-solid fa-envelope" style="color: var(--primary-light); font-size: 1.2rem; margin-right: 15px;"></i> <span>info@surinox.com.ar</span></li>
-                            <li><i class="fa-brands fa-whatsapp" style="color: var(--primary-light); font-size: 1.2rem; margin-right: 15px;"></i> <span>+54 11 5900 7011</span></li>
+                            <li><i class="fa-solid fa-location-dot" style="color: var(--primary-light); font-size: 1.2rem; margin-right: 15px;"></i> <span>Arturo Bas 720, Remedios de Escalada</span></li>
+                            <li><i class="fa-solid fa-phone" style="color: var(--primary-light); font-size: 1.2rem; margin-right: 15px;"></i> <span>11 5900-7011</span></li>
+                            <li><i class="fa-solid fa-envelope" style="color: var(--primary-light); font-size: 1.2rem; margin-right: 15px;"></i> <span>Surinoxacero@gmail.com</span></li>
+                            <li><i class="fa-brands fa-whatsapp" style="color: var(--primary-light); font-size: 1.2rem; margin-right: 15px;"></i> <span>+54 11 3149-9461</span></li>
                         </ul>
                         
-                        <div style="margin-top: 3rem;">
-                            <a href="https://wa.me/+541159007011" target="_blank" class="btn btn-primary"><i class="fa-brands fa-whatsapp" style="margin-right: 8px;"></i> Hablar por WhatsApp</a>
+                        <div style="margin-top: 1.5rem; display: flex; justify-content: flex-start; padding-left: 2rem;">
+                            <a href="https://wa.me/541131499461" target="_blank" class="btn btn-primary" style="padding: 0.8rem 1.5rem;"><i class="fa-brands fa-whatsapp" style="margin-right: 8px;"></i> Hablar por WhatsApp</a>
                         </div>
                     </div>
                     
                     <div class="contacto-form" style="flex: 1; min-width: 300px; background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border: 1px solid var(--border-color);">
                         <h3 style="margin-bottom: 1.5rem; color: var(--primary-blue);">Envíenos un mensaje</h3>
-                        <form style="display: flex; flex-direction: column; gap: 1rem;">
-                            <input type="text" placeholder="Nombre completo" style="padding: 12px; border: 1px solid #ccc; border-radius: 4px; font-family: inherit;">
-                            <input type="email" placeholder="Correo electrónico" style="padding: 12px; border: 1px solid #ccc; border-radius: 4px; font-family: inherit;">
-                            <input type="tel" placeholder="Teléfono / Celular" style="padding: 12px; border: 1px solid #ccc; border-radius: 4px; font-family: inherit;">
-                            <textarea placeholder="Mensaje o consulta sobre productos" rows="5" style="padding: 12px; border: 1px solid #ccc; border-radius: 4px; font-family: inherit; resize: vertical;"></textarea>
+                        <form action="https://formsubmit.co/Surinoxacero@gmail.com" method="POST" style="display: flex; flex-direction: column; gap: 1rem;">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_subject" value="Nuevo Mensaje desde Surinox Web">
+                            <input type="text" name="Nombre" placeholder="Nombre completo" required style="padding: 12px; border: 1px solid #ccc; border-radius: 4px; font-family: inherit;">
+                            <input type="email" name="Email" placeholder="Correo electrónico" required style="padding: 12px; border: 1px solid #ccc; border-radius: 4px; font-family: inherit;">
+                            <input type="tel" name="Teléfono" placeholder="Teléfono / Celular" style="padding: 12px; border: 1px solid #ccc; border-radius: 4px; font-family: inherit;">
+                            <textarea name="Mensaje" placeholder="Mensaje o consulta sobre productos" rows="5" required style="padding: 12px; border: 1px solid #ccc; border-radius: 4px; font-family: inherit; resize: vertical;"></textarea>
                             <button type="submit" class="btn btn-primary" style="margin-top: 10px; border: none; font-family: inherit;">Enviar Mensaje</button>
                         </form>
                     </div>
@@ -88,18 +90,20 @@
             <div class="footer-col">
                 <h3>Contacto</h3>
                 <ul class="footer-contact">
-                    <li><i class="fa-solid fa-location-dot"></i> <span>Parque Industrial, Buenos Aires, Argentina</span></li>
-                    <li><i class="fa-solid fa-phone"></i> <span>+54 11 1234-5678</span></li>
-                    <li><i class="fa-solid fa-envelope"></i> <span>info@surinox.com.ar</span></li>
+                    <li><i class="fa-solid fa-location-dot"></i> <span>Arturo Bas 720, Remedios de Escalada</span></li>
+                    <li><i class="fa-solid fa-phone"></i> <span>11 5900-7011</span></li>
+                    <li><i class="fa-solid fa-envelope"></i> <span>Surinoxacero@gmail.com</span></li>
+                    <li><i class="fa-brands fa-whatsapp" style="color: var(--primary-light);"></i> <span>+54 11 3149-9461</span></li>
+                    
                 </ul>
             </div>
             <div class="footer-col">
                 <h3>Síguenos</h3>
                 <p>Mantenete al tanto de nuestras novedades y nuevos productos de acero inoxidable.</p>
                 <div class="social-links social-blue">
-                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://instagram.com/surinoxacero" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://m.facebook.com/profile.php?id=100064061890124&name=xhp_nt__fb__action__open_user" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
                 </div>
             </div>
         </div>
@@ -107,9 +111,10 @@
             <div class="container"><p>&copy; 2026 Surinox. Todos los derechos reservados.</p></div>
         </div>
     </footer>
-    <a href="https://wa.me/+541159007011" class="btn-whatsapp" target="_blank" aria-label="Contactar por WhatsApp">
+    <a href="https://wa.me/541131499461" class="btn-whatsapp" target="_blank" aria-label="Contactar por WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
     <script src="../js/script.js" defer></script>
 </body>
 </html>
+
