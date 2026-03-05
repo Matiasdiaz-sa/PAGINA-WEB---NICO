@@ -1,0 +1,18 @@
+/* Contacto specific styles */
+
+.contact-info-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-info-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(10, 66, 127, 0.12) !important;
+}
+
+.contact-info-card i {
+    transition: transform 0.3s ease;
+}
+
+.contact-info-card:hover i {
+    transform: scale(1.1);
+}

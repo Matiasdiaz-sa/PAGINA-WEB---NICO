@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/aplicaciones.css">
 </head>
 <body>
     <header class="header" id="header" style="background-color: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
@@ -31,57 +32,56 @@
         </div>
     </header>
 
-    <main style="padding-top: 120px; padding-bottom: 80px; background-color: var(--accent-blue);">
+    <main style="padding-top: 120px; padding-bottom: 80px; background-color: var(--white);">
         <section class="clientes-section">
-            <div class="container text-center">
-                <div class="section-header mb-2">
-                    <h2 class="section-title" style="font-size: 3rem; margin-bottom: 1rem;">Nuestras <span style="color: var(--primary-light);">Aplicaciones</span></h2>
-                    <div class="separator mx-auto"></div>
-                    <p class="section-desc" style="max-width: 800px; font-size: 1.15rem;">Conozca los diferentes sectores industriales donde nuestros productos de acero inoxidable marcan la diferencia en resistencia, higiene y durabilidad.</p>
+            <div class="container">
+                <div class="section-header mb-2" style="text-align: center;">
+                    <h2 class="section-title" style="font-size: 3rem; margin-bottom: 0.5rem;">Nuestras <span style="color: var(--primary-light);">Aplicaciones</span></h2>
+                    <div class="separator mx-auto" style="margin: 0 auto 1rem auto;"></div>
+                    <p class="section-desc mx-auto" style="max-width: 800px; font-size: 1.15rem; margin: 0 auto 4rem auto;">Conozca los diferentes sectores industriales donde nuestros productos de acero inoxidable marcan la diferencia en resistencia, higiene y durabilidad.</p>
                 </div>
                 
-                <div style="background: var(--white); border-radius: 24px; padding: 3rem 2rem; box-shadow: 0 20px 50px rgba(10, 66, 127, 0.08); max-width: 1200px; margin: 0 auto; border: 1px solid rgba(10, 66, 127, 0.05);">
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
                         <!-- Farmacéutica -->
-                        <div style="background: var(--background-light); padding: 2.5rem; border-radius: 16px; border: 1px solid rgba(10, 66, 127, 0.05); text-align: left; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-                            <i class="fa-solid fa-pills" style="font-size: 3rem; color: var(--primary); margin-bottom: 1.5rem;"></i>
-                            <h3 style="color: var(--text-dark); margin-bottom: 1rem; font-size: 1.5rem; font-weight: 700;">Industria Farmacéutica</h3>
-                            <p style="color: var(--text-muted); line-height: 1.6;">Alta pureza e higiene. Nuestros productos cumplen con las normas más estrictas para asegurar que no haya contaminación, brindando la esterilidad que la industria requiere.</p>
+                        <div class="app-card">
+                            <i class="fa-solid fa-pills"></i>
+                            <h3>Industria Farmacéutica</h3>
+                            <p>Alta pureza e higiene. Nuestros productos cumplen con las normas más estrictas para asegurar que no haya contaminación, brindando la esterilidad que la industria requiere.</p>
                         </div>
                         <!-- Alimenticia -->
-                        <div style="background: var(--background-light); padding: 2.5rem; border-radius: 16px; border: 1px solid rgba(10, 66, 127, 0.05); text-align: left; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-                            <i class="fa-solid fa-utensils" style="font-size: 3rem; color: var(--primary); margin-bottom: 1.5rem;"></i>
-                            <h3 style="color: var(--text-dark); margin-bottom: 1rem; font-size: 1.5rem; font-weight: 700;">Industria Alimenticia y Bebidas</h3>
-                            <p style="color: var(--text-muted); line-height: 1.6;">Resistencia a la corrosión y fácil limpieza. Ideales para cervecerías artesanales y plantas procesadoras de alimentos, donde la inocuidad es indispensable.</p>
+                        <div class="app-card">
+                            <i class="fa-solid fa-utensils"></i>
+                            <h3>Industria Alimenticia y Bebidas</h3>
+                            <p>Resistencia a la corrosión y fácil limpieza. Ideales para cervecerías artesanales y plantas procesadoras de alimentos, donde la inocuidad es indispensable.</p>
                         </div>
                         <!-- Química -->
-                        <div style="background: var(--background-light); padding: 2.5rem; border-radius: 16px; border: 1px solid rgba(10, 66, 127, 0.05); text-align: left; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-                            <i class="fa-solid fa-flask" style="font-size: 3rem; color: var(--primary); margin-bottom: 1.5rem;"></i>
-                            <h3 style="color: var(--text-dark); margin-bottom: 1rem; font-size: 1.5rem; font-weight: 700;">Química y Petroquímica</h3>
-                            <p style="color: var(--text-muted); line-height: 1.6;">Soporte de ambientes agresivos. Aleaciones seleccionadas específicamente para soportar el ataque y desgaste de productos químicos altamente corrosivos.</p>
+                        <div class="app-card">
+                            <i class="fa-solid fa-flask"></i>
+                            <h3>Química y Petroquímica</h3>
+                            <p>Soporte de ambientes agresivos. Aleaciones seleccionadas específicamente para soportar el ataque y desgaste de productos químicos altamente corrosivos.</p>
                         </div>
                         <!-- Arquitectura -->
-                        <div style="background: var(--background-light); padding: 2.5rem; border-radius: 16px; border: 1px solid rgba(10, 66, 127, 0.05); text-align: left; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-                            <i class="fa-solid fa-building" style="font-size: 3rem; color: var(--primary); margin-bottom: 1.5rem;"></i>
-                            <h3 style="color: var(--text-dark); margin-bottom: 1rem; font-size: 1.5rem; font-weight: 700;">Arquitectura y Construcción</h3>
-                            <p style="color: var(--text-muted); line-height: 1.6;">Estética y durabilidad estructural. Aplicaciones de diseño moderno y funcional para el desarrollo de estructuras de larga vida útil y que requieren mínimo mantenimiento.</p>
+                        <div class="app-card">
+                            <i class="fa-solid fa-building"></i>
+                            <h3>Arquitectura y Construcción</h3>
+                            <p>Estética y durabilidad estructural. Aplicaciones de diseño moderno y funcional para el desarrollo de estructuras de larga vida útil y que requieren mínimo mantenimiento.</p>
                         </div>
                         <!-- Tratamiento de Aguas -->
-                        <div style="background: var(--background-light); padding: 2.5rem; border-radius: 16px; border: 1px solid rgba(10, 66, 127, 0.05); text-align: left; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-                            <i class="fa-solid fa-water" style="font-size: 3rem; color: var(--primary); margin-bottom: 1.5rem;"></i>
-                            <h3 style="color: var(--text-dark); margin-bottom: 1rem; font-size: 1.5rem; font-weight: 700;">Tratamiento de Aguas</h3>
-                            <p style="color: var(--text-muted); line-height: 1.6;">Resistencia a la oxidación extrema. Soluciones ideales y eficientes para plantas de purificación y sistemas complejos de gestión de fluidos.</p>
+                        <div class="app-card">
+                            <i class="fa-solid fa-water"></i>
+                            <h3>Tratamiento de Aguas</h3>
+                            <p>Resistencia a la oxidación extrema. Soluciones ideales y eficientes para plantas de purificación y sistemas complejos de gestión de fluidos.</p>
                         </div>
                         <!-- Térmico -->
-                        <div style="background: var(--background-light); padding: 2.5rem; border-radius: 16px; border: 1px solid rgba(10, 66, 127, 0.05); text-align: left; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-                            <i class="fa-solid fa-temperature-half" style="font-size: 3rem; color: var(--primary); margin-bottom: 1.5rem;"></i>
-                            <h3 style="color: var(--text-dark); margin-bottom: 1rem; font-size: 1.5rem; font-weight: 700;">Térmico y Refrigeración</h3>
-                            <p style="color: var(--text-muted); line-height: 1.6;">Alto rendimiento en intercambio térmico. Caños y serpentinas diseñados a la medida para alcanzar la máxima eficiencia de enfriamiento y calentamiento.</p>
+                        <div class="app-card">
+                            <i class="fa-solid fa-temperature-half"></i>
+                            <h3>Térmico y Refrigeración</h3>
+                            <p>Alto rendimiento en intercambio térmico. Caños y serpentinas diseñados a la medida para alcanzar la máxima eficiencia de enfriamiento y calentamiento.</p>
                         </div>
                     </div>
                 </div>
                 
-                <div class="mt-2" style="margin-top: 4rem;">
+                <div class="mt-2" style="margin-top: 4rem; text-align: center;">
                     <a href="contacto.html" class="btn btn-primary" style="padding: 1rem 3rem; font-size: 1.1rem; box-shadow: 0 10px 25px rgba(24, 110, 209, 0.25);">Contáctanos para tu proyecto</a>
                 </div>
             </div>

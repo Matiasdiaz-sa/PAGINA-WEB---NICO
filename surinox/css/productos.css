@@ -1,0 +1,315 @@
+/* Productos Detalle */
+.producto-detalle {
+    margin-bottom: 3rem;
+}
+
+.producto-detalle h3 {
+    font-size: 1.8rem;
+    color: var(--primary-blue);
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.producto-detalle h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary-light);
+}
+
+.producto-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.producto-specs {
+    flex: 1;
+    min-width: 300px;
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+    border: 1px solid var(--border-color);
+}
+
+.producto-specs.full-width {
+    flex: 100%;
+}
+
+.producto-specs h4 {
+    font-size: 1.2rem;
+    color: var(--primary-blue);
+    margin-bottom: 1.2rem;
+}
+
+.check-list li, .bullet-list li {
+    margin-bottom: 0.8rem;
+    position: relative;
+    padding-left: 1.8rem;
+    color: var(--text-muted);
+}
+
+.check-list li::before {
+    content: '\f00c';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: var(--primary-light);
+}
+
+.bullet-list li::before {
+    content: '\f0da';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: var(--primary-blue);
+    font-size: 1.2rem;
+}
+
+.check-list.two-cols {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 0.5rem 2rem;
+}
+
+.prod-separator {
+    border: none;
+    border-top: 1px dashed var(--border-color);
+    margin: 3.5rem 0;
+    opacity: 0.6;
+}
+
+.serpentinas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.serp-card {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+    border-top: 4px solid var(--primary-light);
+    display: flex;
+    flex-direction: column;
+}
+
+.serp-card h4 {
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.serp-card ul {
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.serp-card li {
+    font-size: 0.95rem;
+    color: var(--text-main);
+    margin-bottom: 0.5rem;
+    list-style-type: none;
+    position: relative;
+    padding-left: 1.2rem;
+}
+
+.serp-card li::before {
+    content: '•';
+    color: var(--primary-light);
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+.serp-desc {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-style: italic;
+    background-color: var(--accent-blue);
+    padding: 0.8rem;
+    border-radius: 4px;
+    margin-top: auto;
+}
+
+/* Estilos Tipo Apple para Catálogo */
+.apple-catalog {
+    background-color: #fbfbfd;
+    color: #1d1d1f;
+}
+
+.apple-section-title {
+    font-size: 3.5rem;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: #1d1d1f;
+}
+
+.apple-section-desc {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    color: #86868b;
+    margin-bottom: 5rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.apple-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: #1d1d1f;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin-bottom: 5rem;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    min-height: 550px;
+}
+
+.apple-card:hover {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+}
+
+.apple-card-bg {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    transition: transform 0.6s ease;
+}
+
+.apple-card:hover .apple-card-bg {
+    transform: scale(1.03);
+}
+
+.apple-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0.2) 100%);
+    z-index: 1;
+}
+
+.apple-card-content {
+    padding: 3rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.apple-card h3 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    letter-spacing: -0.01em;
+}
+
+.apple-card p.intro {
+    font-size: 1.2rem;
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.apple-specs-grid {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    padding-top: 3rem;
+}
+
+.apple-specs-col {
+    text-align: left;
+    min-width: 250px;
+}
+
+.apple-specs-col h4 {
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 1.2rem;
+}
+
+.apple-list {
+    list-style: none;
+    padding: 0;
+}
+
+.apple-list li {
+    font-size: 1.05rem;
+    color: #ffffff;
+    margin-bottom: 0.8rem;
+    position: relative;
+    padding-left: 1.2rem;
+}
+
+.apple-list li::before {
+    content: '•';
+    color: var(--primary-light);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.apple-btn {
+    display: inline-block;
+    background-color: #0071e3;
+    color: #fff;
+    border-radius: 980px;
+    font-size: 17px;
+    padding: 12px 22px;
+    text-decoration: none;
+    font-weight: 400;
+    margin-top: 2rem;
+    transition: background-color 0.2s;
+}
+
+.apple-btn:hover {
+    background-color: #0077ed;
+    color: #fff;
+}
+
+
+
+/* Responsive Design for Productos */
+@media (max-width: 480px) {
+    .apple-card h3 {
+        font-size: 2rem;
+    }
+    
+    .apple-card p.intro {
+        font-size: 1rem;
+    }
+    
+    .apple-specs-grid {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
