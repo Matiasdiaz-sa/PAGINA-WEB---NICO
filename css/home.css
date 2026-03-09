@@ -197,14 +197,14 @@
 .client-card {
     background: white;
     border-radius: 12px;
-    padding: 1.5rem;
+    padding: 1rem;
     width: 100%;
-    max-width: 220px; /* Restricción de tamaño máximo */
+    max-width: 140px; /* Tamaño mucho más reducido, a pedido del cliente */
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0 5px 20px rgba(0,0,0,0.06);
-    aspect-ratio: 3/4;
+    aspect-ratio: 1/1; /* Tarjeta más cuadrada para logos circulares más pequeños */
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Bouncy transition */
     cursor: pointer;
     position: relative;
