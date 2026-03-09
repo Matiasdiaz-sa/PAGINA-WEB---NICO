@@ -283,12 +283,14 @@
 @media (max-width: 576px) {
     .client-grid-container {
         grid-template-columns: 1fr !important;
-        gap: 2rem !important;
+        gap: 1.5rem !important;
         padding: 1.5rem !important;
     }
     
     .client-card {
-        max-width: 200px; /* Prevenir que se vean excesivamente altos y anchos */
+        width: 120px;
+        max-width: 120px; /* Tamaño mucho más chico en celulares */
+        padding: 0.8rem;
         margin: 0 auto;
     }
 }
