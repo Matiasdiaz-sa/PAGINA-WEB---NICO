@@ -193,22 +193,53 @@
     flex-grow: 1;
 }
 
-/* Rounded Client Logos Mask */
-.client-logo-circle {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    background-color: transparent;
-    transition: transform 0.3s ease;
-    border: 4px solid var(--white);
-    display: block;
-    margin: 0 auto;
+/* Creative Client Card Hover Effect */
+.client-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 220px; /* Restricción de tamaño máximo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    aspect-ratio: 3/4;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Bouncy transition */
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
 }
 
-.client-logo-circle:hover {
-    transform: translateY(-5px);
+.client-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(24, 110, 209, 0) 0%, rgba(24, 110, 209, 0.05) 100%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.client-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(24, 110, 209, 0.15);
+    border-color: var(--primary-light);
+}
+
+.client-card:hover::before {
+    opacity: 1;
+}
+
+.client-card img {
+    transition: transform 0.5s ease;
+    z-index: 1;
+}
+
+.client-card:hover img {
+    transform: scale(1.1) rotate(5deg);
 }
 
 /* Nuevos Estilos Visuales (Diagonales, Imágenes, etc.) */
@@ -227,11 +258,39 @@
 .hero-diagonal-bg {
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
-    background-image: url('../img/bg.png'); /* fallback or standard image */
+    background-image: url('../img/rollos.jpeg'); /* fallback or standard image */
     background-size: cover;
     background-position: center;
     opacity: 0.5;
     z-index: 1;
+}
+
+/* Client Grid */
+.client-grid-container {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    align-items: stretch;
+    justify-items: center;
+}
+
+@media (max-width: 576px) {
+    .client-grid-container {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+        padding: 1.5rem !important;
+    }
+    
+    .client-card {
+        max-width: 200px; /* Prevenir que se vean excesivamente altos y anchos */
+        margin: 0 auto;
+    }
 }
 
 .hero-diagonal::after {
