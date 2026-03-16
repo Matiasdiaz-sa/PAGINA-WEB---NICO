@@ -31,7 +31,7 @@
 .producto-specs {
     flex: 1;
     min-width: 300px;
-    background-color: var(--white);
+    background-color: var(--bg-surface);
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.03);
@@ -97,7 +97,7 @@
 }
 
 .serp-card {
-    background-color: var(--white);
+    background-color: var(--bg-surface);
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.04);

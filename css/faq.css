@@ -5,7 +5,7 @@
 }
 
 .faq-item {
-    background-color: var(--white);
+    background-color: var(--bg-surface);
     margin-bottom: 1rem;
     padding: 1.5rem 2rem;
     border-radius: 8px;

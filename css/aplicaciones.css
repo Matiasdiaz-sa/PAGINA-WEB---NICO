@@ -1,7 +1,7 @@
 /* Aplicaciones specific styles */
 
 .app-card {
-    background: var(--white);
+    background: var(--bg-surface);
     padding: 2.5rem;
     border-radius: 16px;
     border: 1px solid rgba(10, 66, 127, 0.08);
