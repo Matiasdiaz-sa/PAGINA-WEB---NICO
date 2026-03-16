@@ -97,7 +97,7 @@
 /* Productos Section */
 .productos-section {
     padding: 6rem 0;
-    background-color: var(--bg-main);
+    background-color: var(--white);
 }
 
 .section-header {
@@ -134,7 +134,7 @@
 }
 
 .card-producto {
-    background-color: var(--bg-surface);
+    background-color: var(--white);
     border-radius: 12px;
     padding: 2.5rem 2rem;
     text-align: center;
@@ -195,7 +195,7 @@
 
 /* Creative Client Card Hover Effect */
 .client-card {
-    background: var(--bg-surface);
+    background: white;
     border-radius: 12px;
     padding: 1rem;
     width: 100%;
@@ -267,7 +267,7 @@
 
 /* Client Grid */
 .client-grid-container {
-    background: var(--bg-surface);
+    background: var(--white);
     border-radius: 20px;
     padding: 2.5rem;
     box-shadow: 0 15px 40px rgba(0,0,0,0.05);
