@@ -373,13 +373,22 @@
 
 [data-animate] {
     opacity: 0;
-    animation: fadeInUp 0.8s ease forwards;
 }
 
-.hero-content .subtitle { animation-delay: 0.1s; }
-.hero-content .title { animation-delay: 0.3s; }
-.hero-content .description { animation-delay: 0.5s; }
-.hero-content .btn { animation-delay: 0.7s; }
+[data-animate].animate-now {
+    animation: fadeInUp 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+.hero-content .subtitle.animate-now { animation-delay: 0.1s; }
+.hero-content .title.animate-now { animation-delay: 0.2s; }
+.hero-content .description.animate-now { animation-delay: 0.3s; }
+.hero-buttons.animate-now { animation-delay: 0.4s; }
+
+.grid-productos .card-producto:nth-child(1).animate-now { animation-delay: 0.1s; }
+.grid-productos .card-producto:nth-child(2).animate-now { animation-delay: 0.2s; }
+.grid-productos .card-producto:nth-child(3).animate-now { animation-delay: 0.3s; }
+.grid-productos .card-producto:nth-child(4).animate-now { animation-delay: 0.4s; }
+.grid-productos .card-producto:nth-child(5).animate-now { animation-delay: 0.5s; }
 
 
 
